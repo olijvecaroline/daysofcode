@@ -11,7 +11,7 @@
         <img id="mark" src="img/markavond.jpg">
         <img id="EenG" src="img/EenG.jpg">
         <!-- remove autoplay for silence -->
-        <video id="video" autoplay loop="false" src="videos/Geraldine Rojas and Ezequiel Paludi - Vals.mp4" webkit-playsinline/>
+        <video id="video" loop="false" src="videos/Geraldine Rojas and Ezequiel Paludi - Vals.mp4" webkit-playsinline/>
         <a-asset-item id="model" src="models/AnimeChibiModelBase.obj"></a-asset-item>
         <a-asset-item id="material" src="models/AnimeChibiModelBase.mtl"></a-asset-item>
 
@@ -23,7 +23,7 @@
 
         <a-entity
               id="E"
-              position="0 0 0">
+              position="0 1.75 0">
             <a-entity
                       id= "EB"
                       geometry="primitive: cylinder; radius: 0.75; height: 2"
@@ -44,7 +44,7 @@
             </a-entity> <!-- end of EH -->
             <a-entity
                   id="G"
-                  position = -1.5 0 0>
+                  position = -1.5 1.75 0>
                 <a-entity
                           id= "GB"
                           geometry="primitive: sphere; radius: 0.75"
@@ -81,7 +81,7 @@
       <a-animation
             attribute="rotation" begin="click" repeat="2" dur="5000" to="0 360 0">
       </a-animation>
-    <a-camera position="4 4 4">
+    <a-camera position="3 3 10">
       <a-cursor color="#FF0000">
     </a-camera>
 
@@ -102,11 +102,12 @@
     </a-entity>
     <!-- non moving items -->
     <a-sky src="img/markavond.jpg"></a-sky>
-    <a-obj-model src="#model" mtl="#material" position="-7 -3 -8"></a-obj-model>
+    <a-plane rotation="-90 0 0" width="14" height="14" color="grey"></a-plane>
+    <a-obj-model src="#model" mtl="#material" position="-7 0 -8"></a-obj-model>
     <!-- <a-image src="#EenG" width="5" height="5" position="5 -3 -5"></a-image> -->
-    <a-curvedimage src="#EenG" width="5" height="5" position="5 -3 -5" rotation="0 90 0" radius="5" theta-length="40"></a-curvedimage>
+    <a-curvedimage src="#EenG" width="5" height="5" position="5 2.5 -5" rotation="0 90 0" radius="5" theta-length="40"></a-curvedimage>
 
-    <a-video src="#video" width="8" height="8" position="5 -3 -7"> </a-video>
+    <a-video src="#video" width="8" height="8" position="5 4 -7"> </a-video>
     <!-- <a-videosphere src="#video" width="8" height="8" position="5 -3 -7"></a-videosphere> -->
   </a-scene>
 
