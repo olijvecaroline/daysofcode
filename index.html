@@ -8,10 +8,14 @@
     <a-scene>
       <a-assets>
         <img id="mark" src="img/markavond.jpg">
+        <a-asset-item id="model" src="models/AnimeChibiModelBase.obj"></a-asset-item>
+        <a-asset-item id="material" src="models/AnimeChibiModelBase.mtl"></a-asset-item>
     </a-assets>
+
 
     <a-entity
           id="floor">
+
 
         <a-entity
               id="E"
@@ -93,6 +97,7 @@
         position="7 5 0">
     </a-entity>
     <a-sky src="img/markavond.jpg"></a-sky>
+    <a-obj-model src="#model" mtl="#material" position="-4 -3 -5"></a-obj-model>
 
   </a-scene>
 
