@@ -10,6 +10,7 @@
       <a-assets>
         <img id="mark" src="img/markavond.jpg">
         <img id="EenG" src="img/EenG.jpg">
+        <!-- remove autoplay for silence -->
         <video id="video" autoplay loop="false" src="videos/Geraldine Rojas and Ezequiel Paludi - Vals.mp4" webkit-playsinline/>
         <a-asset-item id="model" src="models/AnimeChibiModelBase.obj"></a-asset-item>
         <a-asset-item id="material" src="models/AnimeChibiModelBase.mtl"></a-asset-item>
@@ -106,6 +107,7 @@
     <a-curvedimage src="#EenG" width="5" height="5" position="5 -3 -5" rotation="0 90 0" radius="5" theta-length="40"></a-curvedimage>
 
     <a-video src="#video" width="8" height="8" position="5 -3 -7"> </a-video>
+    <!-- <a-videosphere src="#video" width="8" height="8" position="5 -3 -7"></a-videosphere> -->
   </a-scene>
 
 <script>
